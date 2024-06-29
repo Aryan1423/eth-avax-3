@@ -8,6 +8,7 @@ This Solidity code generates the Token smart contract, which extends the standar
 
 - **Minting**: The owner can mint new tokens, increasing the total supply.
 - **Burning**: Any token holder can burn their tokens, reducing the total supply.
+- **Transfer**: Any token holder can transfer their tokens to another address or user.
 - **Ownership**: Ownership management to control minting and other restricted functionalities.
 
 ## Contract Explanation
@@ -91,10 +92,15 @@ The mint function allows the contract owner to mint new tokens to a specified ad
 
 The burn function allows any token holder to burn their tokens, reducing the total supply. This function can be called by anyone, ensuring that token holders have the flexibility to manage their token balance.
 
+### Transfer
+
+The transfer function allows any token holder to tranfer their token to a different address. This function can be called by anyone, ensuring that token holders have the flexibility to manage their token balance.
+
 ## Usage
 
 - **Minting Tokens**: The owner can mint new tokens by calling the mint function with the recipient's address and the amount of tokens to be minted.
 - **Burning Tokens**: Any token holder can burn their tokens by calling the burn function with the amount of tokens to be burned.
+- **Transfering Tokens**: Any token holder can tranfer their token from one address to another.
 
 ## License
 
